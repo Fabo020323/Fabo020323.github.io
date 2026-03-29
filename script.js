@@ -66,4 +66,74 @@ document
     observer.observe(el);
   });
 
+// Sistema de cambio de idioma
+const translations = {
+  es: {
+    heroTitle: "¡Hola! Soy",
+    heroSubtitle: "Ingeniero Informático",
+    heroDescription: "Desarrollador Full-Stack especializado en Backend | Python • C# • Java",
+    btnProjects: "Ver Proyectos",
+    btnContact: "Contacto",
+    aboutTitle: "Sobre Mí",
+    skillsTitle: "Habilidades Técnicas",
+    experienceTitle: "Experiencia Profesional",
+    projectsTitle: "Proyectos Destacados",
+    contactTitle: "Contacto",
+    contactIntro: "¿Tienes un proyecto en mente o quieres conversar? ¡Contáctame!",
+    location: "Ubicación",
+    years: "Años de Experiencia",
+    projectsCompleted: "Proyectos Completados"
+  },
+  en: {
+    heroTitle: "Hi! I'm",
+    heroSubtitle: "Computer Engineer",
+    heroDescription: "Full-Stack Developer specialized in Backend | Python • C# • Java",
+    btnProjects: "View Projects",
+    btnContact: "Contact",
+    aboutTitle: "About Me",
+    skillsTitle: "Technical Skills",
+    experienceTitle: "Professional Experience",
+    projectsTitle: "Featured Projects",
+    contactTitle: "Contact",
+    contactIntro: "Have a project in mind or want to chat? Contact me!",
+    location: "Location",
+    years: "Years of Experience",
+    projectsCompleted: "Completed Projects"
+  }
+};
+
+let currentLang = localStorage.getItem('language') || 'es';
+
+function changeLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('language', lang);
+  
+  // Actualizar elementos con data-es y data-en
+  document.querySelectorAll('[data-es]').forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+  
+  // Actualizar botón de idioma
+  const langToggle = document.getElementById('langToggle');
+  if (lang === 'es') {
+    langToggle.innerHTML = '<span class="lang-active">ES</span> | <span class="lang-inactive">EN</span>';
+  } else {
+    langToggle.innerHTML = '<span class="lang-inactive">ES</span> | <span class="lang-active">EN</span>';
+  }
+}
+
+// Event listener para el botón de idioma
+const langToggle = document.getElementById('langToggle');
+if (langToggle) {
+  langToggle.addEventListener('click', () => {
+    const newLang = currentLang === 'es' ? 'en' : 'es';
+    changeLanguage(newLang);
+  });
+}
+
+// Cargar idioma guardado al iniciar
+if (currentLang === 'en') {
+  changeLanguage('en');
+}
+
 console.log("Portfolio de Fabián Reyes cargado correctamente 🚀");

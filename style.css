@@ -90,6 +90,40 @@ body {
   transition: 0.3s;
 }
 
+/* Bot\u00f3n de cambio de idioma */
+.lang-toggle {
+  background: none;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.lang-toggle:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.lang-active {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.lang-inactive {
+  opacity: 0.5;
+}
+
+.lang-toggle:hover .lang-active,
+.lang-toggle:hover .lang-inactive {
+  color: white;
+  opacity: 1;
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -670,6 +704,13 @@ section {
 
   .hamburger {
     display: flex;
+  }
+
+  .lang-toggle {
+    margin-left: 0;
+    margin-right: 1rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
   }
 
   .hamburger.active span:nth-child(1) {

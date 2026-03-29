@@ -39,13 +39,35 @@
           Fabián Reyes
         </div>
         <ul class="nav-menu">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
+          <li>
+            <a href="#sobre-mi" data-es="Sobre mí" data-en="About">Sobre mí</a>
+          </li>
+          <li>
+            <a href="#habilidades" data-es="Habilidades" data-en="Skills"
+              >Habilidades</a
+            >
+          </li>
+          <li>
+            <a href="#experiencia" data-es="Experiencia" data-en="Experience"
+              >Experiencia</a
+            >
+          </li>
+          <li>
+            <a href="#proyectos" data-es="Proyectos" data-en="Projects"
+              >Proyectos</a
+            >
+          </li>
+          <li>
+            <a href="#contacto" data-es="Contacto" data-en="Contact"
+              >Contacto</a
+            >
+          </li>
         </ul>
+        <button class="lang-toggle" id="langToggle" title="Cambiar idioma">
+          <span class="lang-active">ES</span> |
+          <span class="lang-inactive">EN</span>
+        </button>
         <div class="hamburger">
           <span></span>
           <span></span>
@@ -60,16 +82,39 @@
         <div class="hero-content">
           <div class="hero-text">
             <h1 class="fade-in">
-              ¡Hola! Soy <span class="highlight">Fabián Reyes</span>
+              <span data-es="¡Hola! Soy" data-en="Hi! I'm">¡Hola! Soy</span>
+              <span class="highlight">Fabián Reyes</span>
             </h1>
-            <h2 class="fade-in-delay">Ingeniero Informático</h2>
-            <p class="fade-in-delay-2">
+            <h2
+              class="fade-in-delay"
+              data-es="Ingeniero Informático"
+              data-en="Computer Engineer"
+            >
+              Ingeniero Informático
+            </h2>
+            <p
+              class="fade-in-delay-2"
+              data-es="Desarrollador Full-Stack especializado en Backend | Python • C# • Java"
+              data-en="Full-Stack Developer specialized in Backend | Python • C# • Java"
+            >
               Desarrollador Full-Stack especializado en Backend | Python • C# •
               Java
             </p>
             <div class="hero-buttons fade-in-delay-3">
-              <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-              <a href="#contacto" class="btn btn-secondary">Contacto</a>
+              <a
+                href="#proyectos"
+                class="btn btn-primary"
+                data-es="Ver Proyectos"
+                data-en="View Projects"
+                >Ver Proyectos</a
+              >
+              <a
+                href="#contacto"
+                class="btn btn-secondary"
+                data-es="Contacto"
+                data-en="Contact"
+                >Contacto</a
+              >
             </div>
             <div class="social-links fade-in-delay-3">
               <a
@@ -106,16 +151,24 @@
     <!-- Sobre Mí -->
     <section id="sobre-mi" class="about">
       <div class="container">
-        <h2 class="section-title">Sobre Mí</h2>
+        <h2 class="section-title" data-es="Sobre Mí" data-en="About Me">
+          Sobre Mí
+        </h2>
         <div class="about-content">
           <div class="about-text">
-            <p>
+            <p
+              data-es="Ingeniero Informático con más de 1 año de experiencia práctica en desarrollo full-stack y liderazgo técnico. Especializado en desarrollo backend con Python/Django, C#/.NET y arquitecturas REST API."
+              data-en="Computer Engineer with over 1 year of practical experience in full-stack development and technical leadership. Specialized in backend development with Python/Django, C#/.NET and REST API architectures."
+            >
               Ingeniero Informático con más de
               <strong>1 año de experiencia práctica</strong> en desarrollo
               full-stack y liderazgo técnico. Especializado en desarrollo
               backend con Python/Django, C#/.NET y arquitecturas REST API.
             </p>
-            <p>
+            <p
+              data-es="Lideré equipo de 4 desarrolladores como Project Manager Junior en proyecto turístico internacional actualmente en producción. Participé en el desarrollo de un sistema de paquetería que actualmente procesa más de 10,000 órdenes mensuales para más de 30 sucursales."
+              data-en="Led a team of 4 developers as Junior Project Manager in an international tourism project currently in production. Participated in the development of a parcel management system that currently processes over 10,000 monthly orders for more than 30 branches."
+            >
               Lideré equipo de 4 desarrolladores como
               <strong>Project Manager Junior</strong> en proyecto turístico
               internacional actualmente en producción. Participé en el
@@ -123,7 +176,10 @@
               <strong>más de 10,000 órdenes mensuales</strong> para más de 30
               sucursales.
             </p>
-            <p>
+            <p
+              data-es="Promedio académico (4.05/5.0), premiado en jornadas científicas y con experiencia docente. Apasionado por crear soluciones innovadoras que generen impacto real."
+              data-en="Academic average (4.05/5.0), awarded at scientific conferences and with teaching experience. Passionate about creating innovative solutions that generate real impact."
+            >
               Promedio académico (4.05/5.0), premiado en jornadas científicas y
               con experiencia docente. Apasionado por crear soluciones
               innovadoras que generen impacto real.
@@ -131,15 +187,24 @@
             <div class="about-stats">
               <div class="stat">
                 <h3>1+</h3>
-                <p>Años de Experiencia</p>
+                <p
+                  data-es="A\u00f1os de Experiencia"
+                  data-en="Years of Experience"
+                >
+                  A\u00f1os de Experiencia
+                </p>
               </div>
               <div class="stat">
                 <h3>6+</h3>
-                <p>Proyectos Completados</p>
+                <p data-es="Proyectos Completados" data-en="Completed Projects">
+                  Proyectos Completados
+                </p>
               </div>
               <div class="stat">
                 <h3>4.05</h3>
-                <p>Promedio Académico</p>
+                <p data-es="Promedio Acad\u00e9mico" data-en="Academic Average">
+                  Promedio Acad\u00e9mico
+                </p>
               </div>
             </div>
           </div>
@@ -150,10 +215,19 @@
     <!-- Habilidades -->
     <section id="habilidades" class="skills">
       <div class="container">
-        <h2 class="section-title">Habilidades Técnicas</h2>
+        <h2
+          class="section-title"
+          data-es="Habilidades Técnicas"
+          data-en="Technical Skills"
+        >
+          Habilidades Técnicas
+        </h2>
         <div class="skills-grid">
           <div class="skill-category">
-            <h3><i class="fas fa-code"></i> Lenguajes</h3>
+            <h3>
+              <i class="fas fa-code"></i>
+              <span data-es="Lenguajes" data-en="Languages">Lenguajes</span>
+            </h3>
             <div class="skill-tags">
               <span class="skill-tag">Python</span>
               <span class="skill-tag">C#</span>
@@ -164,7 +238,10 @@
             </div>
           </div>
           <div class="skill-category">
-            <h3><i class="fas fa-server"></i> Backend</h3>
+            <h3>
+              <i class="fas fa-server"></i>
+              <span data-es="Backend" data-en="Backend">Backend</span>
+            </h3>
             <div class="skill-tags">
               <span class="skill-tag">Django</span>
               <span class="skill-tag">.NET</span>
@@ -175,7 +252,10 @@
             </div>
           </div>
           <div class="skill-category">
-            <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+            <h3>
+              <i class="fas fa-laptop-code"></i>
+              <span data-es="Frontend" data-en="Frontend">Frontend</span>
+            </h3>
             <div class="skill-tags">
               <span class="skill-tag">React</span>
               <span class="skill-tag">Vue.js</span>
@@ -186,7 +266,12 @@
             </div>
           </div>
           <div class="skill-category">
-            <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+            <h3>
+              <i class="fas fa-database"></i>
+              <span data-es="Bases de Datos" data-en="Databases"
+                >Bases de Datos</span
+              >
+            </h3>
             <div class="skill-tags">
               <span class="skill-tag">PostgreSQL</span>
               <span class="skill-tag">MongoDB</span>
@@ -194,7 +279,12 @@
             </div>
           </div>
           <div class="skill-category">
-            <h3><i class="fas fa-cogs"></i> DevOps & Tools</h3>
+            <h3>
+              <i class="fas fa-cogs"></i>
+              <span data-es="DevOps & Tools" data-en="DevOps & Tools"
+                >DevOps & Tools</span
+              >
+            </h3>
             <div class="skill-tags">
               <span class="skill-tag">Docker</span>
               <span class="skill-tag">Git</span>
@@ -204,7 +294,10 @@
             </div>
           </div>
           <div class="skill-category">
-            <h3><i class="fas fa-brain"></i> IA & Otras</h3>
+            <h3>
+              <i class="fas fa-brain"></i>
+              <span data-es="IA & Otras" data-en="AI & Others">IA & Otras</span>
+            </h3>
             <div class="skill-tags">
               <span class="skill-tag">PyTorch</span>
               <span class="skill-tag">GraphQL</span>
@@ -220,27 +313,53 @@
     <!-- Experiencia -->
     <section id="experiencia" class="experience">
       <div class="container">
-        <h2 class="section-title">Experiencia Profesional</h2>
+        <h2
+          class="section-title"
+          data-es="Experiencia Profesional"
+          data-en="Professional Experience"
+        >
+          Experiencia Profesional
+        </h2>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-date">Oct 2025 - Feb 2026</div>
             <div class="timeline-content">
-              <h3>Project Manager Junior & Desarrollador Full-Stack</h3>
+              <h3
+                data-es="Project Manager Junior & Desarrollador Full-Stack"
+                data-en="Junior Project Manager & Full-Stack Developer"
+              >
+                Project Manager Junior & Desarrollador Full-Stack
+              </h3>
               <h4>Medialityc | La Habana, Cuba</h4>
               <p>
-                <strong>Proyecto:</strong> Suntravels - Plataforma Turística
+                <strong data-es="Proyecto:" data-en="Project:"
+                  >Proyecto:</strong
+                >
+                Suntravels -
+                <span data-es="Plataforma Turística" data-en="Tourism Platform"
+                  >Plataforma Turística</span
+                >
                 (Cancún, México)
               </p>
               <ul>
-                <li>
+                <li
+                  data-es="Lideré equipo de 4 desarrolladores con metodología Scrum (12 sprints)"
+                  data-en="Led team of 4 developers with Scrum methodology (12 sprints)"
+                >
                   Lideré equipo de 4 desarrolladores con metodología Scrum (12
                   sprints)
                 </li>
-                <li>
+                <li
+                  data-es="Desarrollé 15 funcionalidades incluyendo integración con Amadeus API"
+                  data-en="Developed 15 features including Amadeus API integration"
+                >
                   Desarrollé 15 funcionalidades incluyendo integración con
                   Amadeus API
                 </li>
-                <li>
+                <li
+                  data-es="Sistema desplegado en producción atendiendo 3 clientes corporativos"
+                  data-en="System deployed in production serving 3 corporate clients"
+                >
                   Sistema desplegado en producción atendiendo 3 clientes
                   corporativos
                 </li>
@@ -256,12 +375,32 @@
           <div class="timeline-item">
             <div class="timeline-date">Sep 2024 - Ene 2025</div>
             <div class="timeline-content">
-              <h3>Profesor de Introducción a la Programación</h3>
+              <h3
+                data-es="Profesor de Introducción a la Programación"
+                data-en="Introduction to Programming Professor"
+              >
+                Profesor de Introducción a la Programación
+              </h3>
               <h4>CUJAE | La Habana, Cuba</h4>
               <ul>
-                <li>Impartí curso de programación en C a 60 estudiantes</li>
-                <li>Diseñé material didáctico y ejercicios prácticos</li>
-                <li>Asesoría en algoritmos y pensamiento computacional</li>
+                <li
+                  data-es="Impartí curso de programación en C a 60 estudiantes"
+                  data-en="Taught C programming course to 60 students"
+                >
+                  Impartí curso de programación en C a 60 estudiantes
+                </li>
+                <li
+                  data-es="Diseñé material didáctico y ejercicios prácticos"
+                  data-en="Designed teaching materials and practical exercises"
+                >
+                  Diseñé material didáctico y ejercicios prácticos
+                </li>
+                <li
+                  data-es="Asesoría en algoritmos y pensamiento computacional"
+                  data-en="Advising on algorithms and computational thinking"
+                >
+                  Asesoría en algoritmos y pensamiento computacional
+                </li>
               </ul>
               <div class="tech-stack">
                 <span>Lenguaje C</span>
@@ -274,22 +413,46 @@
           <div class="timeline-item">
             <div class="timeline-date">Ago 2024 - Jun 2025</div>
             <div class="timeline-content">
-              <h3>Desarrollador Full-Stack</h3>
-              <h4>Seasky | Miami, USA (remoto)</h4>
+              <h3
+                data-es="Desarrollador Full-Stack"
+                data-en="Full-Stack Developer"
+              >
+                Desarrollador Full-Stack
+              </h3>
+              <h4>
+                Seasky | Miami, USA (<span data-es="remoto" data-en="remote"
+                  >remoto</span
+                >)
+              </h4>
               <p>
-                <strong>Proyecto:</strong> Sistema de Gestión de Paquetería
-                Internacional
+                <strong data-es="Proyecto:" data-en="Project:"
+                  >Proyecto:</strong
+                >
+                <span
+                  data-es="Sistema de Gestión de Paquetería Internacional"
+                  data-en="International Parcel Management System"
+                  >Sistema de Gestión de Paquetería Internacional</span
+                >
               </p>
               <ul>
-                <li>
+                <li
+                  data-es="Sistema procesando +10,000 órdenes mensuales para 30+ sucursales"
+                  data-en="System processing +10,000 monthly orders for 30+ branches"
+                >
                   Sistema procesando +10,000 órdenes mensuales para 30+
                   sucursales
                 </li>
-                <li>
+                <li
+                  data-es="Desarrollé autenticación por roles y módulo completo de logística"
+                  data-en="Developed role-based authentication and complete logistics module"
+                >
                   Desarrollé autenticación por roles y módulo completo de
                   logística
                 </li>
-                <li>
+                <li
+                  data-es="Implementé flujos de contenedores y gestión de estados aduanales"
+                  data-en="Implemented container flows and customs status management"
+                >
                   Implementé flujos de contenedores y gestión de estados
                   aduanales
                 </li>
@@ -309,15 +472,29 @@
     <!-- Proyectos -->
     <section id="proyectos" class="projects">
       <div class="container">
-        <h2 class="section-title">Proyectos Destacados</h2>
+        <h2
+          class="section-title"
+          data-es="Proyectos Destacados"
+          data-en="Featured Projects"
+        >
+          Proyectos Destacados
+        </h2>
         <div class="projects-grid">
           <!-- Proyecto 1 -->
           <div class="project-card">
             <div class="project-icon">
               <i class="fas fa-camera"></i>
             </div>
-            <h3>Sistema OCR con Deep Learning</h3>
-            <p>
+            <h3
+              data-es="Sistema OCR con Deep Learning"
+              data-en="OCR System with Deep Learning"
+            >
+              Sistema OCR con Deep Learning
+            </h3>
+            <p
+              data-es="Sistema de reconocimiento óptico de caracteres especializado en imágenes de redes sociales usando PyTorch y GotOCR 2.0. Logró 92% de precisión."
+              data-en="Optical character recognition system specialized in social media images using PyTorch and GotOCR 2.0. Achieved 92% accuracy."
+            >
               Sistema de reconocimiento óptico de caracteres especializado en
               imágenes de redes sociales usando PyTorch y GotOCR 2.0. Logró 92%
               de precisión.
@@ -334,7 +511,8 @@
                 target="_blank"
                 class="project-link"
               >
-                <i class="fab fa-github"></i> Código
+                <i class="fab fa-github"></i>
+                <span data-es="Código" data-en="Code">Código</span>
               </a>
             </div>
           </div>
@@ -344,8 +522,16 @@
             <div class="project-icon">
               <i class="fas fa-book"></i>
             </div>
-            <h3>Agentes - Gestión Bibliotecaria</h3>
-            <p>
+            <h3
+              data-es="Agentes - Gestión Bibliotecaria"
+              data-en="Agents - Library Management"
+            >
+              Agentes - Gestión Bibliotecaria
+            </h3>
+            <p
+              data-es="API REST completa para administración de biblioteca con Spring Boot. Incluye gestión de documentos, préstamos, usuarios y autenticación JWT."
+              data-en="Complete REST API for library administration with Spring Boot. Includes document, loan, user management and JWT authentication."
+            >
               API REST completa para administración de biblioteca con Spring
               Boot. Incluye gestión de documentos, préstamos, usuarios y
               autenticación JWT.
@@ -362,7 +548,8 @@
                 target="_blank"
                 class="project-link"
               >
-                <i class="fab fa-github"></i> Código
+                <i class="fab fa-github"></i>
+                <span data-es="Código" data-en="Code">Código</span>
               </a>
             </div>
           </div>
@@ -372,8 +559,11 @@
             <div class="project-icon">
               <i class="fas fa-heart"></i>
             </div>
-            <h3>DonaVida</h3>
-            <p>
+            <h3 data-es="DonaVida" data-en="DonaVida">DonaVida</h3>
+            <p
+              data-es="Plataforma humanitaria que conecta donadores de sangre con personas necesitadas. Incluye chat en tiempo real, geolocalización y gestión de solicitudes."
+              data-en="Humanitarian platform that connects blood donors with people in need. Includes real-time chat, geolocation and request management."
+            >
               Plataforma humanitaria que conecta donadores de sangre con
               personas necesitadas. Incluye chat en tiempo real, geolocalización
               y gestión de solicitudes.
@@ -390,7 +580,8 @@
                 target="_blank"
                 class="project-link"
               >
-                <i class="fab fa-github"></i> Código
+                <i class="fab fa-github"></i>
+                <span data-es="Código" data-en="Code">Código</span>
               </a>
             </div>
           </div>
@@ -400,8 +591,11 @@
             <div class="project-icon">
               <i class="fas fa-compress"></i>
             </div>
-            <h3>Compress77</h3>
-            <p>
+            <h3 data-es="Compress77" data-en="Compress77">Compress77</h3>
+            <p
+              data-es="Compresor de archivos de texto con algoritmo propio usando estructuras de datos personalizadas. Logró 70% de compresión promedio. Premio en Jornada Científica."
+              data-en="Text file compressor with custom algorithm using personalized data structures. Achieved 70% average compression. Award at Scientific Conference."
+            >
               Compresor de archivos de texto con algoritmo propio usando
               estructuras de datos personalizadas. Logró 70% de compresión
               promedio. Premio en Jornada Científica.
@@ -412,7 +606,12 @@
               <span>Algoritmos</span>
             </div>
             <div class="project-links">
-              <span class="project-badge">🏆 Premiado</span>
+              <span
+                class="project-badge"
+                data-es="🏆 Premiado"
+                data-en="🏆 Awarded"
+                >🏆 Premiado</span
+              >
             </div>
           </div>
 
@@ -421,8 +620,11 @@
             <div class="project-icon">
               <i class="fas fa-microchip"></i>
             </div>
-            <h3>ArchiGenius</h3>
-            <p>
+            <h3 data-es="ArchiGenius" data-en="ArchiGenius">ArchiGenius</h3>
+            <p
+              data-es="Herramienta educativa para enseñanza de Arquitectura de Computadoras. Simulaciones visuales de hardware. Premio en Jornada Científica."
+              data-en="Educational tool for teaching Computer Architecture. Visual hardware simulations. Award at Scientific Conference."
+            >
               Herramienta educativa para enseñanza de Arquitectura de
               Computadoras. Simulaciones visuales de hardware. Premio en Jornada
               Científica.
@@ -433,7 +635,12 @@
               <span>Educativo</span>
             </div>
             <div class="project-links">
-              <span class="project-badge">🏆 Premiado</span>
+              <span
+                class="project-badge"
+                data-es="🏆 Premiado"
+                data-en="🏆 Awarded"
+                >🏆 Premiado</span
+              >
             </div>
           </div>
 
@@ -442,8 +649,11 @@
             <div class="project-icon">
               <i class="fas fa-gamepad"></i>
             </div>
-            <h3>Praedium</h3>
-            <p>
+            <h3 data-es="Praedium" data-en="Praedium">Praedium</h3>
+            <p
+              data-es="Juego desarrollado en Global Game Jam 2022 usando Godot Engine. Completado en 48 horas por equipo de 4 personas."
+              data-en="Game developed at Global Game Jam 2022 using Godot Engine. Completed in 48 hours by a team of 4 people."
+            >
               Juego desarrollado en Global Game Jam 2022 usando Godot Engine.
               Completado en 48 horas por equipo de 4 personas.
             </p>
@@ -452,7 +662,12 @@
               <span>Game Jam</span>
             </div>
             <div class="project-links">
-              <span class="project-badge">🎮 Game Jam</span>
+              <span
+                class="project-badge"
+                data-es="🎮 Game Jam"
+                data-en="🎮 Game Jam"
+                >🎮 Game Jam</span
+              >
             </div>
           </div>
         </div>
@@ -462,15 +677,21 @@
     <!-- Contacto -->
     <section id="contacto" class="contact">
       <div class="container">
-        <h2 class="section-title">Contacto</h2>
+        <h2 class="section-title" data-es="Contacto" data-en="Contact">
+          Contacto
+        </h2>
         <div class="contact-content">
-          <p class="contact-intro">
+          <p
+            class="contact-intro"
+            data-es="¿Tienes un proyecto en mente o quieres conversar? ¡Contáctame!"
+            data-en="Have a project in mind or want to chat? Contact me!"
+          >
             ¿Tienes un proyecto en mente o quieres conversar? ¡Contáctame!
           </p>
           <div class="contact-methods">
             <a href="mailto:faboale020323@gmail.com" class="contact-card">
               <i class="fas fa-envelope"></i>
-              <h3>Email</h3>
+              <h3 data-es="Email" data-en="Email">Email</h3>
               <p>faboale020323@gmail.com</p>
             </a>
             <a
@@ -479,7 +700,7 @@
               class="contact-card"
             >
               <i class="fab fa-github"></i>
-              <h3>GitHub</h3>
+              <h3 data-es="GitHub" data-en="GitHub">GitHub</h3>
               <p>@Fabo020323</p>
             </a>
             <a
@@ -488,12 +709,12 @@
               class="contact-card"
             >
               <i class="fab fa-linkedin"></i>
-              <h3>LinkedIn</h3>
+              <h3 data-es="LinkedIn" data-en="LinkedIn">LinkedIn</h3>
               <p>Fabián Reyes</p>
             </a>
             <div class="contact-card">
               <i class="fas fa-map-marker-alt"></i>
-              <h3>Ubicación</h3>
+              <h3 data-es="Ubicación" data-en="Location">Ubicación</h3>
               <p>La Habana, Cuba</p>
             </div>
           </div>
@@ -505,10 +726,19 @@
     <footer class="footer">
       <div class="container">
         <p>
-          &copy; 2026 Fabián Alejandro Reyes Montero. Todos los derechos
-          reservados.
+          &copy; 2026 Fabián Alejandro Reyes Montero.
+          <span
+            data-es="Todos los derechos reservados."
+            data-en="All rights reserved."
+            >Todos los derechos reservados.</span
+          >
         </p>
-        <p>Ingeniero Informático | Desarrollador Full-Stack</p>
+        <p
+          data-es="Ingeniero Informático | Desarrollador Full-Stack"
+          data-en="Computer Engineer | Full-Stack Developer"
+        >
+          Ingeniero Informático | Desarrollador Full-Stack
+        </p>
       </div>
     </footer>
 

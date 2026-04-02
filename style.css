@@ -204,6 +204,88 @@ body {
   color: white;
 }
 
+/* Descarga CV */
+.cv-download {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cv-download-label {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.cv-split-button {
+  display: inline-flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.cv-split-button:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.cv-half {
+  padding: 0.8rem 1.8rem;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.cv-half i {
+  font-size: 1.2rem;
+}
+
+.cv-left {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.cv-left:hover {
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  padding-right: 2rem;
+}
+
+.cv-right {
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--secondary-color)
+  );
+}
+
+.cv-right:hover {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  padding-left: 2rem;
+}
+
 .social-links {
   display: flex;
   gap: 1rem;
@@ -739,6 +821,23 @@ section {
   }
 
   .hero-buttons {
+    justify-content: center;
+  }
+
+  .cv-download {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cv-split-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cv-half {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    flex: 1;
     justify-content: center;
   }
 
